@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B6B08E"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img1"
+        tools:ignore="MissingConstraints" />
+<TextView
+    app:layout_constraintVertical_bias="0.2"
+    android:textSize="18dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:text="Random sonnni topish oyiniga xush kelibsiz"
+    android:layout_width="350sp"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints" />
+<EditText
+    android:id="@+id/editTextNumber"
+    android:textStyle="bold"
+    android:textColor="#438BA9"
+    android:background="@drawable/item"
+    app:layout_constraintVertical_bias="0.38"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:hint="      Son kiriting"
+    android:layout_width="150sp"
+    android:layout_height="40sp"/>
+    <TextView
+        android:textSize="18.8sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.29"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="   1 dan 100 gacha bo'lgan sonni o'ylab kiriting"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonCheck"
+        app:layout_constraintVertical_bias="0.55"
+        android:backgroundTint="#9456FB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Sonni kiritib bosing"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonRestart"
+        app:layout_constraintVertical_bias="0.63"
+        android:backgroundTint="#9456FB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Qayta boshlash"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.45"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Siz kiritgan son kichik; Katta son kiriting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
